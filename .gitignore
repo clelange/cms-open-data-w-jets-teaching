@@ -1,0 +1,18 @@
+# Downloaded CMS data
+data/
+*.root
+
+# Local Python environments
+.direnv/
+.venv/
+venv/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# OS/editor files
+.DS_Store
