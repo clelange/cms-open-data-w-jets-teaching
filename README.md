@@ -8,7 +8,9 @@ This repository contains reusable Jupyter notebooks for introducing particle-phy
 
 - [`w_to_munu_truth_met_69747.ipynb`](notebooks/w_to_munu_truth_met_69747.ipynb) is the main lesson. It follows W → μν from the hard process and `GenPart` history to a reconstructed muon, missing transverse momentum, and transverse mass.
 - [`truth_and_four_momentum_69747.ipynb`](notebooks/truth_and_four_momentum_69747.ipynb) is an advanced extension covering `LHEPart`, four-momentum conservation, generator-copy bookkeeping, and decay trees. [Open it in Google Colab](https://colab.research.google.com/github/clelange/cms-open-data-w-jets-teaching/blob/main/notebooks/truth_and_four_momentum_69747.ipynb).
-- [`explore_69747.ipynb`](notebooks/explore_69747.ipynb) is a short technical introduction to opening NanoAOD with Uproot and manipulating jagged particle collections with Awkward Array.
+- [`explore_69747.ipynb`](notebooks/explore_69747.ipynb) is an optional technical warm-up for opening NanoAOD with Uproot and manipulating jagged particle collections with Awkward Array.
+
+For a conceptual route, start directly with the main lesson and then continue to the advanced extension. Use the technical warm-up first only if you want additional practice with the Python data tools.
 
 The main and advanced notebooks are designed to run from top to bottom in Google Colab. Their setup cells install missing Python packages and download the approximately 133 MB input file when no local copy is available.
 
