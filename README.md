@@ -12,7 +12,7 @@ This repository contains reusable Jupyter notebooks for introducing particle-phy
 
 For a conceptual route, start directly with the main lesson and then continue to the advanced extension. Use the technical warm-up first only if you want additional practice with the Python data tools.
 
-The main and advanced notebooks are designed to run from top to bottom in Google Colab. Their setup cells install missing Python packages and download the approximately 133 MB input file when no local copy is available.
+The notebooks are designed to run from top to bottom in Google Colab. Their setup cells install missing Python packages and use XRootD to stream the requested data directly from CERN Open Data, so no 133 MB file download is required.
 
 ## Run locally
 
@@ -25,12 +25,8 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-Then open a notebook from `notebooks/`. A previously downloaded input file can be placed at:
-
-```text
-data/69747/00702195-E707-3743-8BBA-57EB9DEE1DBA.root
-```
+Then open a notebook from `notebooks/`. The notebooks require a network connection while running because they read the ROOT file directly from `eospublic.cern.ch` through XRootD.
 
 The advanced notebook also requires the Graphviz `dot` executable; its Colab setup installs this automatically.
 
-The notebooks use [Uproot](https://uproot.readthedocs.io/) and [Awkward Array](https://awkward-array.org/) to read and analyze the ROOT file without requiring a full CMSSW installation.
+The notebooks use [Uproot](https://uproot.readthedocs.io/), [Awkward Array](https://awkward-array.org/), and the Python XRootD interface to read and analyze the remote ROOT file without requiring a full CMSSW installation.
