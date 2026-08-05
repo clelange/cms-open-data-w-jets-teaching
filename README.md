@@ -16,7 +16,7 @@ The notebooks are designed to run from top to bottom in Google Colab. Their setu
 
 ## Run locally
 
-Use Python 3.11 or newer:
+Use Python 3.10 or newer:
 
 ```bash
 python -m venv .venv
